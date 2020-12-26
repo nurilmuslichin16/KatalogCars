@@ -23,7 +23,7 @@ class SplashScreen extends StatelessWidget {
                 height: size.height * 0.3,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: kPrimaryColor.withOpacity(0.5),
+                  color: kCardColor.withOpacity(0.5),
                 ),
               ),
             ),
@@ -35,7 +35,7 @@ class SplashScreen extends StatelessWidget {
                 height: size.height * 0.2,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: kPrimaryColor.withOpacity(0.3),
+                  color: kCardColor.withOpacity(0.3),
                 ),
               ),
             ),
@@ -47,7 +47,7 @@ class SplashScreen extends StatelessWidget {
                 height: size.height * 0.4,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: kPrimaryColor.withOpacity(0.8),
+                  color: kCardColor.withOpacity(0.8),
                 ),
               ),
             ),
@@ -69,7 +69,7 @@ class SplashScreen extends StatelessWidget {
                   "Wellcome To Catalogue Car",
                   style: TextStyle(
                       fontSize: 24,
-                      color: kPrimaryColor,
+                      color: kCardColor,
                       fontWeight: FontWeight.bold,
                       fontFamily: 'SF-Text'),
                 ),
@@ -98,7 +98,7 @@ class SplashScreen extends StatelessWidget {
                     child: FlatButton(
                         padding:
                             EdgeInsets.symmetric(vertical: 20, horizontal: 40),
-                        color: kPrimaryColor,
+                        color: kCardColor,
                         onPressed: () {
                           Navigator.pushAndRemoveUntil(context,
                               MaterialPageRoute(builder: (context) {

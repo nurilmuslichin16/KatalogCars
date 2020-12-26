@@ -12,7 +12,7 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         elevation: 0,
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.transparent,
         title: Text(
           "Catalog Cars",
           style: TextStyle(color: kCardColor, fontWeight: FontWeight.bold),
@@ -33,7 +33,9 @@ class Home extends StatelessWidget {
                   },
                   child: Container(
                     width: double.infinity,
-                    margin: EdgeInsets.only(top: 50),
+                    margin: car.type == "Offroad"
+                        ? EdgeInsets.only(top: 50)
+                        : EdgeInsets.only(top: 16),
                     padding: EdgeInsets.all(16),
                     decoration: BoxDecoration(
                         color: kCardColor,
@@ -81,6 +83,7 @@ class Home extends StatelessWidget {
                   ),
                 ),
                 Positioned(
+                    bottom: 0,
                     right: 10,
                     child: Image.asset(
                       car.imageAsset,
