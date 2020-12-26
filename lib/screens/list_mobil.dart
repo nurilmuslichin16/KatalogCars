@@ -38,7 +38,9 @@ class ListMobil extends StatelessWidget {
                     },
                     child: Container(
                       width: double.infinity,
-                      margin: EdgeInsets.only(top: 20),
+                      margin: car.name == "Jeep Wrangler"
+                          ? EdgeInsets.only(top: size.height * 0.1)
+                          : EdgeInsets.only(top: size.height * 0.03),
                       padding: EdgeInsets.all(16),
                       decoration: BoxDecoration(
                           color: kCardColor,

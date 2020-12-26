@@ -34,8 +34,8 @@ class Home extends StatelessWidget {
                   child: Container(
                     width: double.infinity,
                     margin: car.type == "Offroad"
-                        ? EdgeInsets.only(top: 50)
-                        : EdgeInsets.only(top: 16),
+                        ? EdgeInsets.only(top: size.height * 0.1)
+                        : EdgeInsets.only(top: size.height * 0.05),
                     padding: EdgeInsets.all(16),
                     decoration: BoxDecoration(
                         color: kCardColor,
