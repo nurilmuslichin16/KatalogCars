@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rental_mobil/constant.dart';
 import 'package:rental_mobil/model/cars.dart';
+import 'package:rental_mobil/screens/detail_mobil.dart';
 
 class ListMobil extends StatelessWidget {
   final String type;
@@ -32,7 +33,7 @@ class ListMobil extends StatelessWidget {
                     onTap: () {
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) {
-                        return ListMobil(type: car.type);
+                        return DetailCar(cars: car);
                       }));
                     },
                     child: Container(
@@ -67,7 +68,7 @@ class ListMobil extends StatelessWidget {
                             children: [
                               Icon(
                                 Icons.attach_money,
-                                color: Colors.white,
+                                color: kPrimaryColor,
                               ),
                               Text(
                                 car.price,
